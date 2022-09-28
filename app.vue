@@ -1,17 +1,5 @@
 <template>
   <div>
-    <NuxtWelcome/>
-
-    <div>
-      TEST:
-      <br/>
-      {{ ts }}
-    </div>
+    <NuxtPage />
   </div>
 </template>
-
-<script setup lang="ts">
-  const config = useRuntimeConfig();
-
-  const ts = config.TEST;
-</script>
