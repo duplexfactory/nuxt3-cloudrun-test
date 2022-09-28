@@ -1,0 +1,7 @@
+name = "df-tech-blog"
+workers_dev = true
+main = ".output/server/index.mjs"
+compatibility_date = "2022-09-10"
+
+[site]
+bucket = ".output/public"
