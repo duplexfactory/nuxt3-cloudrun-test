@@ -6,9 +6,8 @@ COPY . ./
 RUN yarn
 
 ARG ENV
-RUN echo $ENV > .env
+RUN echo $ENV | base64 --decode > .env
 
-RUN echo testtt
 RUN echo $ENV
 
 EXPOSE 8080
