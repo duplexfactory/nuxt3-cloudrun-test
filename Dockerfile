@@ -5,6 +5,9 @@ WORKDIR /usr/src/app
 COPY . ./
 RUN yarn
 
+ARG ENV
+RUN echo $ENV > .env
+
 EXPOSE 8080
 
 ENV HOST=0.0.0.0
