@@ -6,9 +6,9 @@ COPY . ./
 RUN yarn
 
 ARG ENV
-RUN echo $ENV | base64 --decode > .env
+RUN echo $ENV | base64 --decode | gunzip > .env
 
-RUN echo $ENV
+RUN cat .env
 
 EXPOSE 8080
 
